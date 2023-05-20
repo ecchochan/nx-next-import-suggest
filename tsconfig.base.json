@@ -15,12 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-next-import-suggest/shared-ui-next-lib": [
-        "libs/shared-ui-next-lib/src/index.ts"
-      ],
-      "@nx-next-import-suggest/shared-ui-next-lib/server": [
-        "libs/shared-ui-next-lib/src/server.ts"
-      ]
+      "@shared-ui-next-lib": ["libs/shared-ui-next-lib/src/index.ts"],
+      "@shared-ui-next-lib/server": ["libs/shared-ui-next-lib/src/server.ts"],
+      "@shared-ui-next-lib/*": ["libs/shared-ui-next-lib/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
